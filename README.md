@@ -10,6 +10,35 @@ I hope it would be of great help for the people looking out for something like t
 
 Lastly, I'm keeping my fingers crossed for not breached any license terms of PHPprotect.
 
+### Setup
+1. Prerequisites: git and php-cli (command line interface) packages as per your system's OS
+2. Navigate to the directory where you want to install shrinker (/usr/local is a good idea): 
+   ```
+   $ cd /usr/local 
+   ```
+3. Then retrieve from GitHub: 
+   ```
+   $ git clone https://github.com/isurfer21/webfuscator.git
+   ```
+4. Go to the webfuscator directory: 
+   ```
+   $ cd webfuscator 
+   ```
+5. Check that webfuscator.php has execute rights, otherwise:
+   ```
+   $ chmod a+x webfuscator.php 
+   ```
+6. Create a symbolic link in the /usr/local/bin directory
+   ```
+   $ cd /usr/local/bin 
+   $ ln -s /usr/local/webfuscator/webfuscator.php webfuscator 
+   ```
+7. You can now run webfuscator 
+   ```
+   $ webfuscator -h 
+   $ webfuscator inputfile.php outputfile.php
+   ```
+
 ### Help
 ```
 Webfuscator
